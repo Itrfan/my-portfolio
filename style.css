@@ -1,0 +1,90 @@
+
+
+* {
+  margin: 0;
+  box-sizing: border-box;
+}
+
+@keyframes slide {
+  from{
+    transform: translateX(-100%);
+  }
+  to{
+    transform: translateX(0);
+  }
+}
+
+@keyframes slide2 {
+  from{
+    transform: translateX(0);
+  }
+  to{
+    transform: translateX(-100%);
+  }
+}
+
+.logos{
+  overflow: hidden;
+  padding: 60px 0 0 0;
+  white-space: nowrap;
+  position: relative;
+}
+
+
+.logos:hover .logos-slide{
+  animation-play-state: paused;
+}
+
+.logos:hover .logos-slide2{
+  animation-play-state: paused;
+}
+
+.logos-slide{
+  display: inline-block;
+  animation: 2s slide infinite linear;
+}
+ 
+.logos-slide2{
+  display: inline-block;
+  animation: 2s slide2 infinite linear;
+}
+
+.logos-slide img{
+  height: 50px;
+  width: 50px;
+  margin: 0 25px;
+}
+
+.stickys{
+  position: sticky;
+  top: 0;
+}
+
+.maintop{
+  height: 100vh;
+}
+
+.namehead{
+  font-size:  25vw;
+  font-family: "Bebas Neue", sans-serif;
+  top: 0;
+  padding-top: 0;
+  padding-bottom: 0;
+  margin-bottom: 0;
+  animation: animate 6s ease-in-out infinite;
+}
+
+@keyframes animate {
+  0% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(25px);
+  }
+}
+
+.namehead:hover .animate{
+  animation-play-state: paused;
+}
+
+/* my skills  */
